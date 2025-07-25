@@ -51,8 +51,11 @@
                     <p class="mb-4">We may collect the following types of information:</p>
                     <ul class="list-disc list-inside space-y-4 pl-4">
                         <li>
-                            <strong class="font-semibold text-gray-700 dark:text-gray-200">Automatically Collected Information:</strong> When you use the App, we automatically collect certain information about your device and your usage of the App through third-party services. This includes:
+                            <strong class="font-semibold text-gray-700 dark:text-gray-200">Automatically Collected Information:</strong> When you use the App, we and our third-party service providers automatically collect certain information about your device and your usage of the App. This includes:
                             <ul class="list-disc list-inside space-y-2 pl-6 mt-2">
+                                <!-- ADDED THIS SECTION -->
+                                <li><strong>Advertising Data (via Google AdMob):</strong> Our advertising partner, Google AdMob, collects device information, such as your IP address and a unique advertising identifier, to serve advertisements. This helps support the App and keep it free.</li>
+                                <!-- END OF ADDED SECTION -->
                                 <li><strong>Crash Information (via Firebase Crashlytics):</strong> We collect information related to app crashes and performance, such as device state information, unique device identifiers, and location of the crash. This helps us diagnose and fix bugs to improve the App's stability.</li>
                                 <li><strong>Usage Data (via Firebase Analytics):</strong> We collect anonymized data about how you interact with the App, such as the features you use and the time, frequency, and duration of your activities. This helps us understand what features are most popular and how to improve the user experience.</li>
                                 <li><strong>Device Information:</strong> This includes your device model, operating system version, and other technical information.</li>
@@ -70,6 +73,9 @@
                     <p>We use the information we collect for the following purposes:</p>
                     <ul class="list-disc list-inside space-y-2 pl-4 mt-2">
                         <li><strong>To Provide and Improve the App:</strong> We use crash reports and analytics data to maintain the App, fix bugs, and develop new features.</li>
+                        <!-- ADDED THIS LINE -->
+                        <li><strong>To Display Advertisements:</strong> We use Google AdMob to display ads within the App, which helps fund the development and maintenance of the App.</li>
+                        <!-- END OF ADDED LINE -->
                         <li><strong>To Understand Our Users:</strong> Analytics data helps us understand our user base and make informed decisions about the future direction of the App.</li>
                     </ul>
                 </section>
@@ -79,7 +85,9 @@
                     <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">3. Permissions</h2>
                     <p>The App requests the following permissions to function correctly:</p>
                     <ul class="list-disc list-inside space-y-2 pl-4 mt-2">
-                        <li><strong>Internet Access (android.permission.INTERNET):</strong> This permission is required to download on-demand audio files for recitations that are not bundled with the initial app installation.</li>
+                        <!-- EDITED THIS LINE -->
+                        <li><strong>Internet Access (android.permission.INTERNET):</strong> This permission is required to download on-demand audio files for recitations and to request and display advertisements from our ad provider.</li>
+                        <!-- END OF EDITED LINE -->
                     </ul>
                 </section>
 
@@ -88,6 +96,9 @@
                     <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">4. Data Sharing and Disclosure</h2>
                     <p>We do not sell or rent your personal data. We may share the automatically collected, anonymized information with the following third-party service providers:</p>
                     <ul class="list-disc list-inside space-y-2 pl-4 mt-2">
+                        <!-- ADDED THIS SECTION -->
+                        <li><strong>Google AdMob:</strong> We partner with Google AdMob to serve ads. Google may use the information it collects to personalize the ads you see. You can learn more about how Google collects and uses data by visiting their policy page: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.</li>
+                        <!-- END OF ADDED SECTION -->
                         <li><strong>Google Firebase:</strong> We use Firebase services (Crashlytics and Analytics) to help us analyze and improve the App. Their use of information is governed by Google's Privacy Policy.</li>
                     </ul>
                 </section>
