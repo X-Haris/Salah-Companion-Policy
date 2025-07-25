@@ -3,89 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy for Salah Companion</title>
+    <title>Privacy Policy - Salah Companion</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
     <style>
+        /* Use the Inter font family */
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            font-family: 'Inter', sans-serif;
         }
-        h1, h2 {
-            color: #222;
+        /* Style for links */
+        a {
+            color: #34D399; /* A nice green color */
+            text-decoration: none;
         }
-        h1 {
-            border-bottom: 2px solid #eee;
-            padding-bottom: 10px;
-        }
-        strong {
-            color: #111;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
-<body>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 antialiased">
 
-    <h1>Privacy Policy for Salah Companion</h1>
+    <!-- Main container -->
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-10">
+            
+            <!-- Header -->
+            <header class="mb-8">
+                <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">Privacy Policy for Salah Companion</h1>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Effective Date: July 21, 2025</p>
+            </header>
 
-    <p><strong>Effective Date:</strong> July 21, 2025</p>
+            <!-- Introduction -->
+            <div class="space-y-6 text-gray-600 dark:text-gray-300 leading-relaxed">
+                <p>This Privacy Policy describes how Salah Companion ("we," "us," or "our") collects, uses, and discloses your information in connection with your use of our mobile application, Salah Companion (the "App").</p>
 
-    <p>This Privacy Policy describes how Salah Companion ("we," "us," or "our") collects, uses, and discloses your information in connection with your use of our mobile application, Salah Companion (the "App").</p>
+                <!-- Section 1: Information We Collect -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">1. Information We Collect</h2>
+                    <p class="mb-4">We may collect the following types of information:</p>
+                    <ul class="list-disc list-inside space-y-4 pl-4">
+                        <li>
+                            <strong class="font-semibold text-gray-700 dark:text-gray-200">Automatically Collected Information:</strong> When you use the App, we automatically collect certain information about your device and your usage of the App through third-party services. This includes:
+                            <ul class="list-disc list-inside space-y-2 pl-6 mt-2">
+                                <li><strong>Crash Information (via Firebase Crashlytics):</strong> We collect information related to app crashes and performance, such as device state information, unique device identifiers, and location of the crash. This helps us diagnose and fix bugs to improve the App's stability.</li>
+                                <li><strong>Usage Data (via Firebase Analytics):</strong> We collect anonymized data about how you interact with the App, such as the features you use and the time, frequency, and duration of your activities. This helps us understand what features are most popular and how to improve the user experience.</li>
+                                <li><strong>Device Information:</strong> This includes your device model, operating system version, and other technical information.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <strong class="font-semibold text-gray-700 dark:text-gray-200">Information You Provide to Us:</strong> Currently, the App does not require you to create an account or provide any personal information like your name or email address.
+                        </li>
+                    </ul>
+                </section>
 
-    <h2>1. Information We Collect</h2>
+                <!-- Section 2: How We Use Your Information -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">2. How We Use Your Information</h2>
+                    <p>We use the information we collect for the following purposes:</p>
+                    <ul class="list-disc list-inside space-y-2 pl-4 mt-2">
+                        <li><strong>To Provide and Improve the App:</strong> We use crash reports and analytics data to maintain the App, fix bugs, and develop new features.</li>
+                        <li><strong>To Understand Our Users:</strong> Analytics data helps us understand our user base and make informed decisions about the future direction of the App.</li>
+                    </ul>
+                </section>
 
-    <p>We may collect the following types of information:</p>
+                <!-- Section 3: Permissions -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">3. Permissions</h2>
+                    <p>The App requests the following permissions to function correctly:</p>
+                    <ul class="list-disc list-inside space-y-2 pl-4 mt-2">
+                        <li><strong>Internet Access (android.permission.INTERNET):</strong> This permission is required to download on-demand audio files for recitations that are not bundled with the initial app installation.</li>
+                    </ul>
+                </section>
 
-    <ul>
-        <li><p><strong>Automatically Collected Information:</strong> When you use the App, we automatically collect certain information about your device and your usage of the App through third-party services. This includes:</p>
-            <ul>
-                <li><strong>Crash Information (via Firebase Crashlytics):</strong> We collect information related to app crashes and performance, such as device state information, unique device identifiers, and location of the crash. This helps us diagnose and fix bugs to improve the App's stability.</li>
-                <li><strong>Usage Data (via Firebase Analytics):</strong> We collect anonymized data about how you interact with the App, such as the features you use and the time, frequency, and duration of your activities. This helps us understand what features are most popular and how to improve the user experience.</li>
-                <li><strong>Device Information:</strong> This includes your device model, operating system version, and other technical information.</li>
-            </ul>
-        </li>
-        <li><p><strong>Information You Provide to Us:</strong> Currently, the App does not require you to create an account or provide any personal information like your name or email address.</p></li>
-    </ul>
+                <!-- Section 4: Data Sharing and Disclosure -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">4. Data Sharing and Disclosure</h2>
+                    <p>We do not sell or rent your personal data. We may share the automatically collected, anonymized information with the following third-party service providers:</p>
+                    <ul class="list-disc list-inside space-y-2 pl-4 mt-2">
+                        <li><strong>Google Firebase:</strong> We use Firebase services (Crashlytics and Analytics) to help us analyze and improve the App. Their use of information is governed by Google's Privacy Policy.</li>
+                    </ul>
+                </section>
 
-    <h2>2. How We Use Your Information</h2>
+                <!-- Section 5: Data Security -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">5. Data Security</h2>
+                    <p>We are committed to protecting your information. While no system is completely secure, we take reasonable measures to help protect information about you from loss, theft, misuse, and unauthorized access.</p>
+                </section>
 
-    <p>We use the information we collect for the following purposes:</p>
-    <ul>
-        <li><strong>To Provide and Improve the App:</strong> We use crash reports and analytics data to maintain the App, fix bugs, and develop new features.</li>
-        <li><strong>To Understand Our Users:</strong> Analytics data helps us understand our user base and make informed decisions about the future direction of the App.</li>
-    </ul>
+                <!-- Section 6: Children's Privacy -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">6. Children's Privacy</h2>
+                    <p>The App is not intended for children under the age of 13, and we do not knowingly collect any personal information from children.</p>
+                </section>
 
-    <h2>3. Permissions</h2>
+                <!-- Section 7: Changes to This Privacy Policy -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">7. Changes to This Privacy Policy</h2>
+                    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the App or on our website. You are advised to review this Privacy Policy periodically for any changes.</p>
+                </section>
 
-    <p>The App requests the following permissions to function correctly:</p>
-    <ul>
-        <li><strong>Internet Access (`android.permission.INTERNET`):</strong> This permission is required to download on-demand audio files for recitations that are not bundled with the initial app installation.</li>
-    </ul>
-
-    <h2>4. Data Sharing and Disclosure</h2>
-
-    <p>We do not sell or rent your personal data. We may share the automatically collected, anonymized information with the following third-party service providers:</p>
-    <ul>
-        <li><strong>Google Firebase:</strong> We use Firebase services (Crashlytics and Analytics) to help us analyze and improve the App. Their use of information is governed by Google's Privacy Policy.</li>
-    </ul>
-
-    <h2>5. Data Security</h2>
-
-    <p>We are committed to protecting your information. While no system is completely secure, we take reasonable measures to help protect information about you from loss, theft, misuse, and unauthorized access.</p>
-
-    <h2>6. Children's Privacy</h2>
-
-    <p>The App is not intended for children under the age of 13, and we do not knowingly collect any personal information from children.</p>
-
-    <h2>7. Changes to This Privacy Policy</h2>
-
-    <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the App or on our website. You are advised to review this Privacy Policy periodically for any changes.</p>
-
-    <h2>8. Contact Us</h2>
-
-    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-    <p><strong>salahcomp.feedback@gmail.com</strong></p>
+                <!-- Section 8: Contact Us -->
+                <section>
+                    <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">8. Contact Us</h2>
+                    <p>If you have any questions about this Privacy Policy, please contact us at:</p>
+                    <p><a href="mailto:salahcomp.feedback@gmail.com">salahcomp.feedback@gmail.com</a></p>
+                </section>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>
