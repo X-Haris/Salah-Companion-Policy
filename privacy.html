@@ -4,119 +4,336 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Salah Companion</title>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.7;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
-        a {
-            color: #34D399;
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a5c3a 0%, #2d8a5e 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .effective-date {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .intro {
+            font-size: 1.05rem;
+            color: #555;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        section {
+            margin-bottom: 35px;
+        }
+
+        h2 {
+            color: #1a5c3a;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e8f5e9;
+        }
+
+        h3 {
+            color: #2d8a5e;
+            font-size: 1.05rem;
+            margin: 20px 0 10px 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        ul {
+            margin: 15px 0;
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 12px;
+            color: #444;
+        }
+
+        li strong {
+            color: #1a5c3a;
+        }
+
+        .nested-list {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .nested-list li {
+            margin-bottom: 8px;
+            font-size: 0.95rem;
+        }
+
+        /* Highlighted section for Data Deletion */
+        .highlight-section {
+            background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+            border-left: 4px solid #1a5c3a;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+
+        .highlight-section h2 {
+            color: #1a5c3a;
+            border-bottom: none;
+            margin-bottom: 15px;
+        }
+
+        .highlight-section ul {
+            background: white;
+            padding: 20px 20px 20px 40px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+
+        .deletion-path {
+            display: inline-block;
+            background: #1a5c3a;
+            color: white;
+            padding: 4px 12px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+
+        .contact-email {
+            display: inline-block;
+            background: #2d8a5e;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 6px;
             text-decoration: none;
+            font-weight: 500;
+            transition: background 0.3s ease;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .contact-email:hover {
+            background: #1a5c3a;
+        }
+
+        .permissions-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #f0f0f0;
+        }
+
+        .permissions-list li:last-child {
+            border-bottom: none;
+        }
+
+        .permission-name {
+            font-family: monospace;
+            background: #f5f5f5;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 25px 30px;
+            text-align: center;
+            border-top: 1px solid #eee;
+        }
+
+        footer p {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 10px;
+            }
+
+            header {
+                padding: 30px 20px;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .content {
+                padding: 25px 20px;
+            }
+
+            h2 {
+                font-size: 1.15rem;
+            }
+
+            .highlight-section {
+                padding: 20px 15px;
+            }
         }
     </style>
 </head>
-<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 antialiased">
-
-<div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
-
-    <div class="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 sm:p-10">
-
-        <header class="mb-8">
-            <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-2">Privacy Policy for Salah Companion</h1>
-            <p class="text-sm text-gray-500 dark:text-gray-400">Effective Date: August 17, 2025</p>
+<body>
+    <div class="container">
+        <header>
+            <h1>Privacy Policy</h1>
+            <p class="effective-date">Effective Date: January 1, 2026</p>
         </header>
 
-        <div class="space-y-6 text-gray-600 dark:text-gray-300 leading-relaxed">
-            <p>This Privacy Policy describes how Salah Companion ("we," "us," or "our") collects, uses, and discloses your information in connection with your use of our mobile application, Salah Companion (the "App"). Your privacy is important to us, and we are committed to being transparent about the data we collect and why.</p>
+        <div class="content">
+            <p class="intro">
+                This Privacy Policy describes how Salah Companion ("we," "us," or "our") collects, uses, and discloses your information in connection with your use of our mobile application, Salah Companion (the "App"). Your privacy is important to us, and we are committed to being transparent about the data we collect and why.
+            </p>
 
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">1. Information We Collect</h2>
-                <p class="mb-4">We may collect the following types of information:</p>
-                <ul class="list-disc list-inside space-y-4 pl-4">
-                    <li>
-                        <strong class="font-semibold text-gray-700 dark:text-gray-200">Location Data:</strong> To calculate accurate prayer times and determine the Qibla direction, we collect your device's precise location (`ACCESS_FINE_LOCATION`) and approximate location (`ACCESS_COARSE_LOCATION`). While this information is used by the app for its core features, it is also shared with our third-party advertising partner (Google AdMob) to provide location-based ads.
-                    </li>
-                    <li>
-                        <strong class="font-semibold text-gray-700 dark:text-gray-200">Automatically Collected Information:</strong> When you use the App, we and our third-party service providers automatically collect certain information. This includes:
-                        <ul class="list-disc list-inside space-y-2 pl-6 mt-2">
-                            <li><strong>Device or other IDs:</strong> Our advertising partner, Google AdMob, collects your device's unique advertising identifier to serve personalized advertisements.</li>
-                            <li><strong>App info and performance:</strong> We collect crash logs and diagnostics data (e.g., device model, OS version) to diagnose and fix bugs, and to monitor and improve the App's stability and performance.</li>
-                            <li><strong>App interactions:</strong> We collect anonymized data about how you interact with the App's features to improve user experience. Our advertising partner also collects data on how you interact with ads.</li>
-                            <li><strong>Inferred Religious Beliefs:</strong> The context of this app (an Islamic utility) may be used by our advertising partner to infer your interests and serve more relevant ads.</li>
-                        </ul>
-                    </li>
-                    <li>
-                        <strong class="font-semibold text-gray-700 dark:text-gray-200">User-Generated Content (Local):</strong> The App allows you to create bookmarks. This information is generated by you and is stored only locally on your device. It is never collected by us or shared with any third party.
-                    </li>
+                <h2>1. Information We Collect</h2>
+                <p>We may collect the following types of information:</p>
+
+                <h3>User Profile and Account Data (Optional)</h3>
+                <p>The App includes optional social and gamification features, such as a user profile, avatar, and public leaderboards. These features are entirely voluntary. If you choose to create a profile and join the leaderboards, we collect the following information:</p>
+                <ul class="nested-list">
+                    <li><strong>Display Name:</strong> The name you choose to be identified by on the leaderboards. This will be visible to other users. You may also participate with the default name "Anonymous".</li>
+                    <li><strong>Account Information:</strong> We use Firebase Authentication to securely manage your account via an anonymous sign-in. This creates a unique User ID to associate with your profile data but does not require your email address.</li>
+                    <li><strong>User-Generated Content:</strong> This includes your avatar configuration, earned points (Hasanat), and unlocked achievements. This data is associated with your profile.</li>
                 </ul>
+
+                <h3>Location Data</h3>
+                <p>To calculate accurate prayer times and determine the Qibla direction, we collect your device's precise location (<span class="permission-name">ACCESS_FINE_LOCATION</span>) and approximate location (<span class="permission-name">ACCESS_COARSE_LOCATION</span>). While this information is used by the app for its core features, it is also shared with our third-party advertising partner (Google AdMob) to provide location-based ads.</p>
+
+                <h3>Automatically Collected Information</h3>
+                <p>When you use the App, we and our third-party service providers automatically collect certain information. This includes:</p>
+                <ul>
+                    <li><strong>Device or other IDs:</strong> Our advertising partner, Google AdMob, collects your device's unique advertising identifier to serve personalized advertisements.</li>
+                    <li><strong>App info and performance:</strong> We collect crash logs and diagnostics data (e.g., device model, OS version) to diagnose and fix bugs, and to monitor and improve the App's stability and performance.</li>
+                    <li><strong>App interactions:</strong> We collect anonymized data about how you interact with the App's features to improve user experience. Our advertising partner also collects data on how you interact with ads.</li>
+                    <li><strong>Inferred Religious Beliefs:</strong> The context of this app (an Islamic utility) may be used by our advertising partner to infer your interests and serve more relevant ads.</li>
+                </ul>
+
+                <h3>User-Generated Content (Local)</h3>
+                <p>The App allows you to create bookmarks. This information is generated by you and is stored only locally on your device. It is never collected by us or shared with any third party unless you voluntarily join the leaderboards.</p>
+
+                <h3>Purchase Information</h3>
+                <p>When you make in-app purchases (such as Premium), Google Play processes and stores your purchase history. We receive confirmation of your purchase status but do not have access to your payment details.</p>
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">2. How We Use Your Information</h2>
+                <h2>2. How We Use Your Information</h2>
                 <p>We use the information we collect for the following purposes:</p>
-                <ul class="list-disc list-inside space-y-2 pl-4 mt-2">
+                <ul>
                     <li><strong>To Provide App Functionality:</strong> To provide you with accurate, location-based prayer times and Qibla direction.</li>
+                    <li><strong>To Provide Social and Gamification Features (Optional):</strong> If you choose to join the leaderboards, we use your Display Name, points, country, and avatar to display your rank on public leaderboards and to create a more engaging, personalized experience within the app.</li>
                     <li><strong>For Advertising or Marketing:</strong> To display ads within the App, which helps fund development and keep the app free. This includes using your Advertising ID and Location Data to serve personalized ads.</li>
                     <li><strong>For Analytics:</strong> To understand how our app is used, diagnose and fix bugs or crashes, and make future performance improvements.</li>
                     <li><strong>For Personalization:</strong> To customize your experience, such as showing prayer times based on your location or showing more relevant advertisements.</li>
+                    <li><strong>To Provide Premium Features:</strong> To verify your purchase status and unlock premium features such as detailed statistics and home screen widgets.</li>
                 </ul>
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">3. Permissions</h2>
+                <h2>3. Permissions</h2>
                 <p>The App requests the following permissions to function correctly:</p>
-                <ul class="list-disc list-inside space-y-3 pl-4 mt-2">
-                    <li><strong>Location (`ACCESS_FINE_LOCATION` and `ACCESS_COARSE_LOCATION`):</strong> Required to automatically determine your geographical position for accurate prayer times and Qibla direction.</li>
-                    <li><strong>Notifications (`POST_NOTIFICATIONS`):</strong> Necessary to show you timely alerts for daily prayer times and other important Islamic events.</li>
-                    <li><strong>Set Exact Alarms (`SCHEDULE_EXACT_ALARM`):</strong> Used to ensure that prayer time notifications are delivered precisely on time, even when your device is in a low-power mode.</li>
-                    <li><strong>Run at Startup (`RECEIVE_BOOT_COMPLETED`):</strong> Allows the App to automatically reschedule your prayer alarms after your device is restarted.</li>
-                    <li><strong>Internet (`INTERNET`):</strong> Required to fetch prayer time calculation data, download on-demand audio files, and display advertisements.</li>
-                    <li><strong>Vibrate (`VIBRATE`):</strong> Used to provide vibrating alerts for notifications.</li>
-                    <li><strong>Wake Lock (`WAKE_LOCK`) & Foreground Service (`FOREGROUND_SERVICE`):</strong> Used to ensure that prayer time alarms and notifications can be reliably delivered even when the app is in the background or the screen is off.</li>
+                <ul class="permissions-list">
+                    <li><strong>Location</strong> <span class="permission-name">ACCESS_FINE_LOCATION</span> <span class="permission-name">ACCESS_COARSE_LOCATION</span><br>Required to automatically determine your geographical position for accurate prayer times and Qibla direction.</li>
+                    <li><strong>Notifications</strong> <span class="permission-name">POST_NOTIFICATIONS</span><br>Necessary to show you timely alerts for daily prayer times and other important Islamic events.</li>
+                    <li><strong>Set Exact Alarms</strong> <span class="permission-name">SCHEDULE_EXACT_ALARM</span><br>Used to ensure that prayer time notifications are delivered precisely on time, even when your device is in a low-power mode.</li>
+                    <li><strong>Run at Startup</strong> <span class="permission-name">RECEIVE_BOOT_COMPLETED</span><br>Allows the App to automatically reschedule your prayer alarms after your device is restarted.</li>
+                    <li><strong>Internet</strong> <span class="permission-name">INTERNET</span><br>Required to fetch prayer time calculation data, download on-demand audio files, display advertisements, and interact with leaderboard and avatar services.</li>
+                    <li><strong>Vibrate</strong> <span class="permission-name">VIBRATE</span><br>Used to provide vibrating alerts for notifications.</li>
+                    <li><strong>Wake Lock &amp; Foreground Service</strong> <span class="permission-name">WAKE_LOCK</span> <span class="permission-name">FOREGROUND_SERVICE</span><br>Used to ensure that prayer time alarms and notifications can be reliably delivered even when the app is in the background or the screen is off.</li>
+                    <li><strong>In-App Purchases</strong> <span class="permission-name">com.android.vending.BILLING</span><br>Required to process premium purchases through Google Play.</li>
                 </ul>
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">4. Data Sharing and Disclosure</h2>
-                <p>We do not sell or rent your personal data. We may share automatically collected information with the following third-party service providers for the purposes of advertising and analytics:</p>
-                <ul class="list-disc list-inside space-y-2 pl-4 mt-2">
-                    <li><strong>Google AdMob:</strong> We partner with Google AdMob to serve ads. Google may use the information it collects (such as your Advertising ID and Location) to personalize the ads you see. You can learn more about how Google collects and uses data by visiting their policy page: <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer">How Google uses information from sites or apps that use our services</a>.</li>
+                <h2>4. Data Sharing and Disclosure</h2>
+                <p>We do not sell or rent your personal data. We may share information with the following third-party service providers:</p>
+                <ul>
+                    <li><strong>Google Firebase (Authentication, Firestore):</strong> If you opt-in to the leaderboard feature, we use Firebase to create and manage your user account, store your profile data (display name, points, achievements, avatar configuration, country), and power the public leaderboards.</li>
+                    <li><strong>DiceBear API:</strong> To generate your custom avatar, we send your configuration choices to the DiceBear API. This information is used solely for the purpose of generating the avatar image.</li>
+                    <li><strong>Google AdMob:</strong> We partner with Google AdMob to serve ads. Google may use the information it collects (such as your Advertising ID and Location) to personalize the ads you see. You can learn more about how Google collects and uses data by visiting their policy page: <em>How Google uses information from sites or apps that use our services</em>.</li>
                     <li><strong>Google Play Services:</strong> We use services provided by Google Play to analyze crash logs and app performance data to improve the app's stability.</li>
+                    <li><strong>Google Play Billing:</strong> We use Google Play's billing system to process in-app purchases. Google handles all payment processing. We only receive confirmation of purchase status.</li>
                 </ul>
             </section>
 
-            <section>
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">5. Data Deletion</h2>
-                <p>Our app does not require account creation, and all user data (such as bookmarks and reading progress) is stored locally on your device. You can delete this data at any time by clearing the app's data in your device's system settings or by uninstalling the app.</p>
+            <section class="highlight-section">
+                <h2>5. Data Deletion</h2>
+                <p>You have full control over your data. You can delete all your data directly within the app:</p>
+                <p><span class="deletion-path">Settings &gt; Delete My Data</span></p>
+                <p>This action will permanently delete:</p>
+                <ul>
+                    <li><strong>All locally stored data:</strong> Prayer history, achievements, bookmarks, reading progress, avatar customizations, and settings</li>
+                    <li><strong>Leaderboard profile (if joined):</strong> Your leaderboard profile, display name release, and Firebase sign-out</li>
+                </ul>
+                <p><strong>Alternative methods:</strong></p>
+                <ul>
+                    <li>Clear the app's data in your device's system settings</li>
+                    <li>Uninstall the app to remove all local data</li>
+                </ul>
+                <p>For questions about data deletion or to request confirmation of permanent deletion from our servers, please contact us at:</p>
+                <p><a href="mailto:salahcomp.feedback@gmail.com" class="contact-email">salahcomp.feedback@gmail.com</a></p>
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">6. Children's Privacy</h2>
+                <h2>6. Children's Privacy</h2>
                 <p>The App is not intended for children under the age of 13, and we do not knowingly collect any personal information from children.</p>
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">7. Changes to This Privacy Policy</h2>
+                <h2>7. Changes to This Privacy Policy</h2>
                 <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy within the App or on our website. You are advised to review this Privacy Policy periodically for any changes.</p>
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold text-gray-800 dark:text-white mb-4 mt-8 border-b border-gray-200 dark:border-gray-700 pb-2">8. Contact Us</h2>
+                <h2>8. Contact Us</h2>
                 <p>If you have any questions about this Privacy Policy, please contact us at:</p>
-                <p><a href="mailto:salahcomp.feedback@gmail.com">salahcomp.feedback@gmail.com</a></p>
+                <p><a href="mailto:salahcomp.feedback@gmail.com" class="contact-email">salahcomp.feedback@gmail.com</a></p>
             </section>
         </div>
-    </div>
-</div>
 
+        <footer>
+            <p>Salah Companion</p>
+            <p>&copy; 2026 All rights reserved.</p>
+        </footer>
+    </div>
 </body>
 </html>
